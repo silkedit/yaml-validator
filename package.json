@@ -1,0 +1,12 @@
+{
+  "name": "yaml-validator",
+  "version": "0.1.0",
+  "description": "YAML Validator",
+  "main": "index.js",
+  "repository": "silkedit/yaml-validator",
+  "author": "SilkEdit team",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "3.x"
+  }
+}

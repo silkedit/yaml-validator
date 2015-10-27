@@ -1,0 +1,6 @@
+menu:
+  validate:
+    label: YAMLとしてバリデート
+
+valid: 有効なYAMLです。
+invalid: 無効なYAMLです。
