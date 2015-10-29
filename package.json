@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/silkedit/yaml-validator"
+    "url": "https://github.com/silkedit/yaml-validator.git"
   },
   "author": {
     "name": "SilkEdit team"
