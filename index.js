@@ -6,7 +6,7 @@ module.exports = {
 
 	commands: {
 		"validate": () => {
-			const editView = silk.activeView()
+			const editView = silk.activeTextEditView()
 			if (editView != null) {
 			  try {
 			    yaml.safeLoad(editView.text())
