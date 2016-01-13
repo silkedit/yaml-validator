@@ -1,4 +1,5 @@
-var yaml = require('js-yaml');
+const silkedit = require('silkedit');
+const yaml = require('js-yaml');
 
 module.exports = {
 	activate: function() {
@@ -6,13 +7,13 @@ module.exports = {
 
 	commands: {
 		"validate": () => {
-			const editView = silk.activeTextEditView()
+			const editView = silkedit.API.activeTextEditView()
 			if (editView != null) {
 			  try {
 			    yaml.safeLoad(editView.text())
-			    silk.alert(silk.t("yaml-validator:valid", "Valid YAML content!"))
+			    silkedit.API.alert(silkedit.t("yaml-validator:valid", "Valid YAML content!"))
 			  } catch(e) {
-			    silk.alert(silk.t("yaml-validator:invalid", "Invalid YAML content!"))
+			    silkedit.API.alert(silkedit.t("yaml-validator:invalid", "Invalid YAML content!"))
 			  }
 			}
 		}
