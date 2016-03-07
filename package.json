@@ -1,6 +1,6 @@
 {
   "name": "yaml-validator",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "YAML Validator",
   "main": "index.js",
   "repository": {

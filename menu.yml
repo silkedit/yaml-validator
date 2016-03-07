@@ -1,7 +1,7 @@
 menu:
-  - label: Packages
+  - title: Packages
     id: packages
     menu:
-      - label: 'Validate as YAML'
+      - title: 'Validate as YAML'
         id: validate
         command: yaml-validator.validate
