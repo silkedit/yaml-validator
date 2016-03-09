@@ -1,6 +1,6 @@
 {
   "name": "yaml-validator",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "YAML Validator",
   "main": "index.js",
   "repository": {
@@ -13,5 +13,10 @@
   "license": "MIT",
   "dependencies": {
     "js-yaml": "3.x"
+  },
+  "locales": {
+    "ja": {
+      "description": "YAMLバリデーション"
+    }
   }
 }
