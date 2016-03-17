@@ -7,10 +7,10 @@ module.exports = {
 
 	commands: {
 		'validate': () => {
-			const editView = silkedit.App.activeTextEditView()
-			if (editView != null) {
+			const textEdit = silkedit.App.activeTextEdit()
+			if (textEdit != null) {
 			  try {
-			    yaml.safeLoad(editView.text())
+			    yaml.safeLoad(textEdit.text)
 			    silkedit.alert(silkedit.tr('valid', 'yaml-validator', 'Valid YAML content!'))
 			  } catch(e) {
 			    silkedit.alert(silkedit.tr('invalid', 'yaml-validator', 'Invalid YAML content!'))
